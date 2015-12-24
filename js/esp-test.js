@@ -1,16 +1,10 @@
 'use strict';
 
 function check(){
-    var answer = parseInt(document.getElementById('answer').value);
-
-    if(isNaN(answer)){
-        return;
-    }
-
     var integer = Math.floor(Math.random() * 100000) + 1;
     var result = ' was generated. You ';
 
-    result += answer === integer
+    result += parseInt(document.getElementById('answer').value) === integer
       ? 'might have ESP!'
       : 'probably don\'t have ESP.';
 
