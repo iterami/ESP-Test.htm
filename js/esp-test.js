@@ -12,14 +12,13 @@ function check(){
     document.getElementById('result').innerHTML = result;
 }
 
-window.onkeydown = function(e){
-    var key = e.keyCode || e.which;
-
-    if(key === 13){
-        check();
-    }
-};
-
 window.onload = function(e){
+    init_input(
+      {
+        13: {
+          'todo': check,
+        },
+      }
+    );
     document.getElementById('answer').focus();
 };
