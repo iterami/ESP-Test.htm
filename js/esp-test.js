@@ -13,12 +13,13 @@ function check(){
 }
 
 window.onload = function(e){
-    init_input(
+    input_init(
       {
         13: {
           'todo': check,
         },
       }
     );
+
     document.getElementById('answer').focus();
 };
