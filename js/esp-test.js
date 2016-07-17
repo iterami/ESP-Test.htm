@@ -1,7 +1,10 @@
 'use strict';
 
 function check(){
-    var integer = Math.floor(Math.random() * 100000) + 1;
+    var integer = random_integer(
+      100000,
+      'ceil'
+    );
     var result = ' was generated. You ';
 
     result += parseInt(document.getElementById('answer').value, 10) === integer
