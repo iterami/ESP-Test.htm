@@ -25,4 +25,5 @@ window.onload = function(e){
     );
 
     document.getElementById('answer').focus();
+    document.getElementById('check').onclick = check;
 };
