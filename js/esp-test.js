@@ -16,13 +16,13 @@ function check(){
 }
 
 window.onload = function(e){
-    input_init(
-      {
+    input_init({
+      'keybinds': {
         13: {
           'todo': check,
         },
-      }
-    );
+      },
+    });
 
     document.getElementById('answer').focus();
     document.getElementById('check').onclick = check;
