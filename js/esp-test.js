@@ -1,7 +1,7 @@
 'use strict';
 
 function check(){
-    var integer = random_integer({
+    var integer = core_random_integer({
       'max': 100000,
       'todo': 'ceil',
     });
