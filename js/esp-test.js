@@ -15,8 +15,8 @@ function check(){
     document.getElementById('result').innerHTML = result;
 }
 
-window.onload = function(e){
-    core_input_init({
+function repo_init(){
+    core_input_binds_add({
       'keybinds': {
         13: {
           'todo': check,
@@ -26,4 +26,4 @@ window.onload = function(e){
 
     document.getElementById('answer').focus();
     document.getElementById('check').onclick = check;
-};
+}
