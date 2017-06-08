@@ -16,6 +16,9 @@ function check(){
 }
 
 function repo_init(){
+    core_repo_init({
+      'title': 'ESP-Test.htm',
+    });
     core_events_bind({
       'keybinds': {
         13: {
