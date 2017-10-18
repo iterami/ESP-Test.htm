@@ -2,6 +2,11 @@
 
 function repo_init(){
     core_repo_init({
+      'info-events': {
+        'check': {
+          'todo': check,
+        },
+      },
       'keybinds': {
         13: {
           'todo': check,
@@ -9,7 +14,4 @@ function repo_init(){
       },
       'title': 'ESP-Test.htm',
     });
-
-    document.getElementById('answer').focus();
-    document.getElementById('check').onclick = check;
 }
