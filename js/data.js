@@ -7,7 +7,7 @@ function check(){
     });
     var result = integer + ' was generated. You ';
 
-    result += parseInt(document.getElementById('answer').value, 10) === integer
+    result += Number.parseInt(document.getElementById('answer').value, 10) === integer
       ? 'might have ESP!'
       : 'probably don\'t have ESP.';
 
