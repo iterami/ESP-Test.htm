@@ -1,11 +1,11 @@
 'use strict';
 
 function check(){
-    var integer = core_random_integer({
+    let integer = core_random_integer({
       'max': 100000,
       'todo': 'ceil',
     });
-    var result = integer + ' was generated. You ';
+    let result = integer + ' was generated. You ';
 
     result += Number.parseInt(document.getElementById('answer').value, 10) === integer
       ? 'might have ESP!'
