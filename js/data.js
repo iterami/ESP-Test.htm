@@ -5,7 +5,9 @@ function check(){
       'max': 100000,
       'todo': 'ceil',
     });
-    let result = integer + ' was generated. You ';
+    let result = core_number_format({
+      'number': integer,
+    }) + ' was generated. You ';
 
     result += Number.parseInt(document.getElementById('answer').value, 10) === integer
       ? 'might have ESP!'
