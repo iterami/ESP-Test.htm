@@ -11,5 +11,5 @@ function check(){
       ? 'might have ESP!'
       : 'probably don\'t have ESP.';
 
-    document.getElementById('result').innerHTML = result;
+    document.getElementById('result').textContent = result;
 }
