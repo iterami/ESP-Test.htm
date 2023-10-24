@@ -22,7 +22,7 @@ function repo_init(){
         },
       },
       'keybinds': {
-        13: {
+        'Enter': {
           'todo': check,
         },
       },
