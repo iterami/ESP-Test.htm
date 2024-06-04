@@ -7,11 +7,11 @@ function check(){
     });
     let result = integer + ' was generated. You ';
 
-    result += Number.parseInt(document.getElementById('answer').value, 10) === integer
+    result += Number.parseInt(core_elements['answer'].value, 10) === integer
       ? 'might have ESP!'
       : 'probably don\'t have ESP.';
 
-    document.getElementById('result').textContent = result;
+    core_elements['result'].textContent = result;
 }
 
 function repo_init(){
@@ -27,5 +27,9 @@ function repo_init(){
         },
       },
       'title': 'ESP-Test.htm',
+      'ui-elements': [
+        'answer',
+        'result',
+      ],
     });
 }
