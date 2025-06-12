@@ -1,10 +1,7 @@
 'use strict';
 
 function check(){
-    const integer = core_random_integer({
-      'max': 100000,
-      'todo': 'ceil',
-    });
+    const integer = core_random_integer(100000) + 1;
     let result = integer + ' was generated. You ';
 
     result += Number.parseInt(core_elements['answer'].value, 10) === integer
