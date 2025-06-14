@@ -1,14 +1,14 @@
 'use strict';
 
 function check(){
-    const integer = core_random_integer(100000) + 1;
+    const integer = core_random_integer(1e6) + 1;
     let result = integer + ' was generated. You ';
 
-    result += Number.parseInt(core_elements['answer'].value, 10) === integer
+    result += Number.parseInt(core_elements.answer.value, 10) === integer
       ? 'might have ESP!'
       : 'probably don\'t have ESP.';
 
-    core_elements['result'].textContent = result;
+    core_elements.result.textContent = result;
 }
 
 function repo_init(){
