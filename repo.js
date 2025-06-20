@@ -24,7 +24,7 @@ function repo_init(){
         },
       },
       'title': 'ESP-Test.htm',
-      'ui-elements': [
+      'ui_elements': [
         'answer',
         'result',
       ],
