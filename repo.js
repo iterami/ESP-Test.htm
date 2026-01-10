@@ -20,7 +20,7 @@ function repo_init(){
       },
       'keybinds': {
         'Enter': {
-          'todo': check,
+          'down': check,
         },
       },
       'title': 'ESP-Test.htm',
