@@ -6,7 +6,7 @@ function check(){
         'number': integer,
       }) + ' was generated.<br>You ';
 
-    result += Number.parseInt(core_elements.answer.value, 10) === integer
+    result += Number(core_elements.answer.value) === integer
       ? 'might have ESP!'
       : 'probably don\'t have ESP.';
 
